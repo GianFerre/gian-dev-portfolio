@@ -312,7 +312,7 @@ background-color: #5e3236;
 }
 
 .card-link:hover .card {
-  transform: scale(1.02); /* Slightly enlarges the card */
+  transform: scale(1.03); /* Slightly enlarges the card */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
 }
 
@@ -321,13 +321,13 @@ background-color: #5e3236;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.quizsnap-card .card-image {
+/* .quizsnap-card .card-image {
   max-width: 40%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
   transition: opacity 0.3s ease;
-}
+} */
 
 .quizsnap-card:hover .card-image {
   opacity: 0; /* Fade out circle image */
@@ -356,13 +356,15 @@ background-color: #5e3236;
   background-color: rgba(37, 38, 39, 0.8);
 }
 
+.contact-form-container {
+  margin-left: 50px;
+  margin-right: 55px;
+}
+
 
 
 @media (max-width: 820px) {
-
-  .card {
-    max-width: 100%;
-  }
+  
   .header-title {
       font-size: 40px;
   }
@@ -401,9 +403,56 @@ background-color: #5e3236;
   }
 }
 
+/* Apply hover effects only to devices that support hover */
+@media (hover: hover) {
+  .card:hover,
+  .quizsnap-card:hover,
+  .card-link:hover .card {
+    transform: scale(1.05); /* Enlarges the card */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Adds shadow */
+  }
 
+  .quizsnap-card:hover .card-image {
+    opacity: 0; /* Fade out circle image */
+  }
 
+  .quizsnap-card:hover .background-overlay {
+    opacity: 1; /* Show background */
+  }
 
+  .quizsnap-card:hover .textBlock {
+    background-color: rgba(37, 38, 39, 0.8); /* Darker background */
+  }
 
+  .quizsnap-card:hover .card-title,
+  .quizsnap-card:hover .card-text {
+    color: white; /* Adjust text color */
+  }
+}
 
+/* Disable hover styles for mobile devices */
+@media (hover: none) {
+  .card:hover,
+  .quizsnap-card:hover,
+  .card-link:hover .card {
+    transform: none !important; /* No scaling */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15) !important; /* Default shadow */
+  }
 
+  .quizsnap-card .card-image {
+    opacity: 1 !important; /* Ensure images are visible */
+  }
+
+  .quizsnap-card .background-overlay {
+    opacity: 0 !important; /* Hide background overlay */
+  }
+
+  .quizsnap-card .textBlock {
+    background-color: #f2efe9 !important; /* Restore default background */
+  }
+
+  .quizsnap-card .card-title,
+  .quizsnap-card .card-text {
+    color: black !important; /* Default text color */
+  }
+}
