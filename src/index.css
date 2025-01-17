@@ -364,11 +364,10 @@ background-color: #5e3236;
 
 
 @media (max-width: 820px) {
-
-  .card-image {
-    width: 180px;
+  .card {
+    height: 320px;
   }
-  
+
   .header-title {
       font-size: 40px;
   }
@@ -404,6 +403,10 @@ background-color: #5e3236;
     position: relative;
     width: 220px;
     height: 220px; /* Same dimensions as the images */
+  }
+
+  .parent-form {
+    margin-bottom: 50px;
   }
 }
 
@@ -460,3 +463,42 @@ background-color: #5e3236;
     color: black !important; /* Default text color */
   }
 }
+
+/* Ensure the form and inputs adjust properly on smaller viewports */
+@media (max-width: 820px) {
+  .contact-form-container {
+    padding: 15px; /* Adjust padding */
+    width: 90%; /* Ensure it doesn't go beyond the screen width */
+    margin: 0 auto; /* Center the form */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  form {
+    gap: 10px; /* Reduce spacing between form elements */
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Add spacing between stacked inputs */
+  }
+
+  input, textarea {
+    width: 100%; /* Ensure inputs are within the form bounds */
+    max-width: 100%; /* Prevent inputs from exceeding the form width */
+    font-size: 14px; /* Adjust font size */
+    padding: 10px; /* Maintain comfortable padding */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+
+  textarea {
+    height: 80px; /* Adjust height for smaller viewports */
+  }
+
+  .form-button {
+    padding: 12px; /* Adjust padding for touch devices */
+    font-size: 16px; /* Ensure text is readable */
+    width: 100%; /* Make the button span the full width of the form */
+    box-sizing: border-box; /* Ensure it doesn't overflow */
+  }
+}
+
