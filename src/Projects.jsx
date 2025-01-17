@@ -75,40 +75,42 @@ function Projects() {
     ];
 
     return (
-        <div className="project-container">
-            <h1 className="project-container-title">My Works</h1>
-            <div className="card-organizer">
-                {projectCards.map((card) => (
-                    <a
-                        key={card.name}
-                        href={card.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="card-link"
-                    >
-                        <div
-                            className={`card quizsnap-card ${hoveredCard === card.name ? "hovered" : ""}`}
-                            onMouseEnter={() => handleMouseEnter(card.name)}
-                            onMouseLeave={handleMouseLeave}
+        <div className="project-page-container">
+            <div className="project-container">
+                <h1 className="project-container-title">My Works</h1>
+                <div className="card-organizer">
+                    {projectCards.map((card) => (
+                        <a
+                            key={card.name}
+                            href={card.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="card-link"
                         >
                             <div
-                                className="background-overlay"
-                                style={{
-                                    backgroundImage: hoveredCard === card.name ? `url(${card.preview})` : "none",
-                                }}
-                            ></div>
-                            <img
-                                className={`card-image ${hoveredCard === card.name ? "hidden" : ""}`}
-                                src={card.image}
-                                alt={card.title}
-                            />
-                            <div className="textBlock">
-                                <h2 className="card-title">{card.title}</h2>
-                                <p className="card-text">{card.text}</p>
+                                className={`card quizsnap-card ${hoveredCard === card.name ? "hovered" : ""}`}
+                                onMouseEnter={() => handleMouseEnter(card.name)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <div
+                                    className="background-overlay"
+                                    style={{
+                                        backgroundImage: hoveredCard === card.name ? `url(${card.preview})` : "none",
+                                    }}
+                                ></div>
+                                <img
+                                    className={`card-image ${hoveredCard === card.name ? "hidden" : ""}`}
+                                    src={card.image}
+                                    alt={card.title}
+                                />
+                                <div className="textBlock">
+                                    <h2 className="card-title">{card.title}</h2>
+                                    <p className="card-text">{card.text}</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                ))}
+                        </a>
+                    ))}
+                </div>
             </div>
         </div>
     );
