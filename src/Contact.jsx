@@ -1,6 +1,9 @@
-function Contact() {
+import React, { forwardRef } from "react";
+
+// Use forwardRef to allow scrolling functionality
+const Contact = forwardRef((props, ref) => {
     return (
-        <div className="parent-form">
+        <div className="parent-form" ref={ref}>
             <div className="contact-form-container">
                 <h1>Thank you for getting in touch. <br /> What can I do for you today?</h1>
                 <form action="https://formspree.io/f/xdkkqvly" method="POST">
@@ -14,6 +17,6 @@ function Contact() {
             </div>
         </div>
     );
-}
+});
 
 export default Contact;

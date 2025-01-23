@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import profilePic from "./assets/laptop-avatar.png";
 import happyLaptop from "./assets/happy-laptop.png";
 
-function Header() {
+function Header({ onSayHiClick }) {
     const [activePic, setActivePic] = useState("profile"); // Manage active image
 
     const handleMouseEnter = () => {
@@ -26,6 +26,7 @@ function Header() {
                         className="header-button"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
+                        onClick={onSayHiClick} // Add click event for scrolling
                     >
                         Say Hi!
                     </button>
