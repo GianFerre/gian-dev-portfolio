@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import quizsnapCircleImg from "./assets/quizsnap-box.png";
 import quizsnapPreview from "./assets/quizsnap-preview.png";
-import goldReserves from "./assets/gold-reserves.png";
+import houseOfFarkle from "./assets/house-of-farkle-logo.png";
 import goldReservesPreview from "./assets/gold-standard-preview.png";
 import flag from "./assets/fictional-nation.png";
 import flagPreview from "./assets/flag-preview.png";
@@ -11,6 +11,7 @@ import dice from "./assets/dice-and-dungeons.png";
 import dicePreview from "./assets/dice-preview.png";
 import freeBGMS from "./assets/freeBGMS.png";
 import freeBGMSPreview from "./assets/freeBGMS-preview.png";
+import farklePreview from "./assets/farkle-preview.png";
 
 function Projects() {
     const [hoveredCard, setHoveredCard] = useState(null); // Track hovered card
@@ -30,15 +31,15 @@ function Projects() {
             image: quizsnapCircleImg,
             preview: quizsnapPreview,
             title: "QuizSnap",
-            text: "A web app that lets users easily create, customize, and share quizzes. It makes quiz-building fun and hassle-free for everyone.",
+            text: "Take fun and engaging quizzes on a variety of topics. Whether you're testing your knowledge or just looking for a quick brain break, QuizSnap makes it easy and enjoyable to dive into trivia!",
         },
         {
-            name: "gold-standard",
-            href: "about:blank",
-            image: goldReserves,
-            preview: goldReservesPreview,
-            title: "Golden Standard 1971",
-            text: "A website that converts dollar amounts into gold based on the 1971 exchange rate of $35 per ounce.",
+            name: "house-of-farkle",
+            href: "https://gianferre.github.io/house-of-farkle/",
+            image: houseOfFarkle,
+            preview: farklePreview,
+            title: "House of Farkle",
+            text: "A digital adaptation of the classic dice game Farkle. Play, strategize, and test your luck in this engaging web-based experience.",
         },
         {
             name: "design-a-nation",
