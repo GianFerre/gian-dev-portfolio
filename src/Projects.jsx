@@ -42,11 +42,11 @@ function Projects() {
             text: "A digital adaptation of the classic dice game Farkle. Play, strategize, and test your luck in this engaging web-based experience.",
         },
         {
-            name: "biryani-house",
+            name: "GK Ferre",
             href: "https://gianferre.github.io/biryani-house/",
             image: gkFerre,
             preview: gkFerrePreview,
-            title: "Biryani House",
+            title: "GK Ferre",
             text: "Experience the rich flavors of biryani, crafted with the finest ingredients and traditional recipes.",
         },
         {
