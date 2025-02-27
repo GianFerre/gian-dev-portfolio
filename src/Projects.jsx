@@ -54,7 +54,7 @@ function Projects() {
             href: "about:blank",
             image: flag,
             preview: flagPreview,
-            title: "Design-a-Nation",
+            title: "Rebuild test",
             text: "Create custom national flags with this interactive app, exploring flag symbolism and history.",
         },
         {
