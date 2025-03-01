@@ -43,7 +43,7 @@ function Projects() {
         },
         {
             name: "GK Ferre",
-            href: "https://gianferre.github.io/biryani-house/",
+            href: "https://gianferre.github.io/gk-ferre/",
             image: gkFerre,
             preview: gkFerrePreview,
             title: "GK Ferre",
