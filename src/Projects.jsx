@@ -73,7 +73,7 @@ function Projects() {
             image: dice,
             preview: dicePreview,
             title: "Dice Challenge",
-            text: "A fast-paced 2-player game where each player rolls a die to compete for the highest number. Highest roll wins",
+            text: "A fast-paced 2-player game where each player rolls a die to compete for the highest number. Highest roll wins!",
         }
     ];
 
