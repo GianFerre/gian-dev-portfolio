@@ -60,8 +60,8 @@ function Projects() {
             text: "A collection of royalty-free background music tracks for use in games, videos, and other projects.",
         },
         {
-            name: "https://gianferre.github.io/dinodash/",
-            href: "about:blank",
+            name: "dino-runner",
+            href: "https://gianferre.github.io/dinodash/",
             image: dinoicon,
             preview: dinopreview,
             title: "Dino Runner",
