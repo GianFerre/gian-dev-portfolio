@@ -12,6 +12,8 @@ import dicePreview from "./assets/dice-preview.png";
 import freeBGMS from "./assets/freeBGMS.png";
 import freeBGMSPreview from "./assets/freeBGMS-preview.png";
 import farklePreview from "./assets/farkle-preview.png";
+import dinoicon from "./assets/dino-icon.jpg";
+import dinopreview from "./assets/Dino-Preview.png";
 
 function Projects() {
     const [hoveredCard, setHoveredCard] = useState(null); // Track hovered card
@@ -50,29 +52,29 @@ function Projects() {
             text: "Experience the rich flavors of biryani, crafted with the finest ingredients and traditional recipes.",
         },
         {
-            name: "design-a-nation",
-            href: "about:blank",
-            image: flag,
-            preview: flagPreview,
-            title: "Rebuild test",
-            text: "Create custom national flags with this interactive app, exploring flag symbolism and history.",
-        },
-        {
-            name: "dice-and-dungeons",
-            href: "about:blank",
-            image: dice,
-            preview: dicePreview,
-            title: "Dice & Dungeons",
-            text: "A dice-driven mini-RPG where players use dice rolls to battle, explore dungeons, and solve puzzles.",
-        },
-        {
             name: "free-bgms",
-            href: "about:blank",
+            href: "https://gianferre.github.io/project-royal-site/",
             image: freeBGMS,
             preview: freeBGMSPreview,
             title: "Free BGMs",
             text: "A collection of royalty-free background music tracks for use in games, videos, and other projects.",
         },
+        {
+            name: "https://gianferre.github.io/dinodash/",
+            href: "about:blank",
+            image: dinoicon,
+            preview: dinopreview,
+            title: "Dino Runner",
+            text: "Dino Runner is a browser game where a T-Rex runs endlessly, jumping over cacti and dodging obstacles when there's no internet.",
+        },
+        {
+            name: "dice-and-dungeons",
+            href: "https://gianferre.github.io/dice-challenge/",
+            image: dice,
+            preview: dicePreview,
+            title: "Dice Challenge",
+            text: "A fast-paced 2-player game where each player rolls a die to compete for the highest number. Highest roll wins",
+        }
     ];
 
     return (
